@@ -1,6 +1,3 @@
-if (window.location.protocol != "https:") {
-    window.location.protocol="https:";
-}
 
 const canvas = document.querySelector('canvas');
 const c = canvas.getContext('2d');
@@ -9,10 +6,10 @@ c.fillStyle = "white";
 c.fillRect(0, 0, canvas.width, canvas.height);
 
 const image = new Image();
-image.src = 'map.png';
+image.src = 'imgs/map.png';
 
 const playerImage = new Image();
-playerImage.src = 'player.png';
+playerImage.src = 'imgs/player.png';
 
 image.onload = function() {
     c.drawImage(image, -100, -200);
